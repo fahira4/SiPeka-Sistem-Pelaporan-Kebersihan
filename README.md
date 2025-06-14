@@ -1,5 +1,4 @@
 # 📑 SiPeka - Sistem Pelaporan Kebersihan
-![App Banner](https://via.placeholder.com/1024x300/1B5E20/FFFFFF?text=SiPeka+Sistem+Pelaporan+Kebersihan)
 Masalah sampah yang tidak terkelola dengan baik, seperti penumpukan sampah liar dan keterlambatan pengangkutan, masih sering terjadi di lingkungan masyarakat. Hal ini disebabkan oleh kurangnya sistem pelaporan yang efektif antara warga dan petugas kebersihan. Untuk mengatasi hal tersebut, dikembangkanlah SiPeka (Sistem Pelaporan Kebersihan). SiPeka (Sistem Pelaporan Kebersihan) adalah aplikasi desktop berbasis JavaFX yang memungkinkan warga untuk melaporkan masalah kebersihan dan pengelolaan sampah di lingkungan mereka. Aplikasi ini menyediakan antarmuka yang mudah digunakan untuk mengelola pengaduan sampah secara efektif. SiPeka bertujuan untuk efisiensi pengelolaan kebersihan lingkungan,diantaranya :
 1.	Meningkatkan Partisipasi Masyarakat dalam Pengelolaan Kebersihan
 2.	Mempermudah Pengelolaan Jadwal Pengangkutan Sampah

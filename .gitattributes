@@ -6,4 +6,7 @@
 
 # These are Windows script files and should use crlf
 *.bat           text eol=crlf
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12500cbd802cf0529d13177e392f76d33d7658f6

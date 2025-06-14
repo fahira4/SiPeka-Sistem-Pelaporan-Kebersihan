@@ -1,5 +1,6 @@
 # 📑 SiPeka - Sistem Pelaporan Kebersihan
-Masalah sampah yang tidak terkelola dengan baik, seperti penumpukan sampah liar dan keterlambatan pengangkutan, masih sering terjadi di lingkungan masyarakat. Hal ini disebabkan oleh kurangnya sistem pelaporan yang efektif antara warga dan petugas kebersihan. Untuk mengatasi hal tersebut, dikembangkanlah SiPeka (Sistem Pelaporan Kebersihan), yaitu aplikasi layanan publik berbasis Java yang menerapkan prinsip Object-Oriented Programming (OOP). SiPeka bertujuan untuk efisiensi pengelolaan kebersihan lingkungan,diantaranya :
+![App Banner](https://via.placeholder.com/1024x300/1B5E20/FFFFFF?text=SiPeka+Sistem+Pelaporan+Kebersihan)
+Masalah sampah yang tidak terkelola dengan baik, seperti penumpukan sampah liar dan keterlambatan pengangkutan, masih sering terjadi di lingkungan masyarakat. Hal ini disebabkan oleh kurangnya sistem pelaporan yang efektif antara warga dan petugas kebersihan. Untuk mengatasi hal tersebut, dikembangkanlah SiPeka (Sistem Pelaporan Kebersihan). SiPeka (Sistem Pelaporan Kebersihan) adalah aplikasi desktop berbasis JavaFX yang memungkinkan warga untuk melaporkan masalah kebersihan dan pengelolaan sampah di lingkungan mereka. Aplikasi ini menyediakan antarmuka yang mudah digunakan untuk mengelola pengaduan sampah secara efektif. SiPeka bertujuan untuk efisiensi pengelolaan kebersihan lingkungan,diantaranya :
 1.	Meningkatkan Partisipasi Masyarakat dalam Pengelolaan Kebersihan
 2.	Mempermudah Pengelolaan Jadwal Pengangkutan Sampah
 3.	Mempercepat Proses Tindak Lanjut Laporan Sampah
@@ -25,7 +26,6 @@ SIPEKA/
 │   │       │       PengendaliGamifikasi.java
 │   │       │       PengendaliJadwal.java
 │   │       │       PengendaliLogin.java
-│   │       │       PengendaliStatistik.java
 │   │       │
 │   │       ├───database
 │   │       │       RankingRTDAO.java
@@ -39,7 +39,6 @@ SIPEKA/
 │   │       │       ForumDiskusi.java
 │   │       │       Gamifikasi.java
 │   │       │       JadwalPengangkutan.java
-│   │       │       LaporanStatistik.java
 │   │       │       NotifikasiJadwal.java
 │   │       │       Pengguna.java
 │   │       │       RT.java
@@ -53,8 +52,7 @@ SIPEKA/
 │   │               HalamanLogin.java
 │   │               HalamanUtama.java
 │   │               NotifikasiJadwal.java
-│   │               RankingRTView.java
-│   │               StatistikBulananGUI.java
+│   │               PointRTView.java
 │   │               TampilanJadwalPengangkutan.java
 │   │
 │   └───resources
@@ -100,3 +98,10 @@ Fungsi kompleks seperti penyimpanan data (PenyimpananData.java) dan layanan noti
    ```sh
    ./gradlew run
    ```
+## Author
+1. Github: fahira4
+2. Github: rnratika
+3. Github: izzasyathra
+
+## MIT License
+Copyright (c) 2025 Tim SiPeka

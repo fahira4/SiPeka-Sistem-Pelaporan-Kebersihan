@@ -11,4 +11,5 @@ plugins {
 }
 
 rootProject.name = 'SiPeka-Sistem-Pelaporan-Kebersihan'
+
 include('app')

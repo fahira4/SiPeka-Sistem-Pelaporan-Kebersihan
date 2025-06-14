@@ -71,41 +71,41 @@ SIPEKA/
 ## 🔎 Implementasi OOP
 ### 1. Encapsulation (Enkapsulasi)
 Menyembunyikan detail internal suatu objek dan hanya menampilkan bagian yang dibutuhkan melalui getter/setter atau method publik. Tujuannya untuk menjaga keamanan data dan memisahkan implementasi dari antarmuka pengguna. Implementasinya ada pada semua class dalam *model, controller, dan beberapa di tampilan*
-- Contoh pada class:
-Pengguna.java
-→ memiliki atribut seperti username, password, namaLengkap yang diakses melalui getter/setter.
-RT.java
-→ menyimpan data namaRT, jumlahPoin, dan metode getter/setter untuk mengaksesnya.
-Gamifikasi.java, JadwalPengangkutan.java, NotifikasiJadwal.java, dll
-→ semuanya menyembunyikan data dengan private dan menggunakan method publik untuk akses.
+Contoh pada class:
+- Pengguna.java
+memiliki atribut seperti username, password, namaLengkap yang diakses melalui getter/setter.
+- RT.java
+menyimpan data namaRT, jumlahPoin, dan metode getter/setter untuk mengaksesnya.
+- Gamifikasi.java, JadwalPengangkutan.java, NotifikasiJadwal.java, dll
+semuanya menyembunyikan data dengan private dan menggunakan method publik untuk akses.
 dan lain-lain (DashboardController, HalamanLogin, LayananNotifikasi, PengendaliForum, daftarJadwal, daftarPengguna, dan gamifikasi).
 
 ### 2. Inheritance (Pewarisan)
 Konsep di mana sebuah class dapat mewarisi sifat dan perilaku (atribut dan method) dari class lain. Ini memungkinkan code reuse dan struktur hierarki antar class, contohnya: class Mobil extends Kendaraan.
-- Contoh pada class:
-FormLaporanSampah.java
-→ *FormLaporanSampah extends VBox* ini adalah bentuk pewarisan dari class JavaFX VBox, sehingga FormLaporanSampah otomatis memiliki properti dan method layout milik VBox.
+Contoh pada class:
+- FormLaporanSampah.java
+*FormLaporanSampah extends VBox* ini adalah bentuk pewarisan dari class JavaFX VBox, sehingga FormLaporanSampah otomatis memiliki properti dan method layout milik VBox.
 
 ### 3. Polymorphism (Polimorfisme)
 Kemampuan objek untuk merespons secara berbeda terhadap method yang sama, tergantung jenis objeknya. Misalnya, method bergerak() dapat memiliki implementasi berbeda di class Mobil dan Motor.
-- Contoh pada class:
-LayananNotifikasi.java
-→ Method overload atau pengiriman notifikasi melalui method yang sama (tampilkanInfo vs tampilkanError) menunjukkan polimorfisme melalui nama method yang sama dengan perilaku berbeda.
-FormLaporanSampah.java dan FormRegistrasi.java
-→ Event handler tombol seperti:
+Contoh pada class:
+- LayananNotifikasi.java
+Method overload atau pengiriman notifikasi melalui method yang sama (tampilkanInfo vs tampilkanError) menunjukkan polimorfisme melalui nama method yang sama dengan perilaku berbeda.
+- FormLaporanSampah.java dan FormRegistrasi.java
+Event handler tombol seperti:
 *simpanButton.setOnAction(e -> { ... });*
 Di sini, setOnAction menerima objek dari interface EventHandler, dan lambda expression e -> { ... } adalah bentuk polimorfik dari handler.
 
 Pada method tambahKomentar, hapusPost, dll, 
 ### 4. Abstraction (Abstraksi)
 Menyembunyikan kompleksitas dan hanya menampilkan fitur penting suatu objek. Biasanya digunakan dengan abstract class atau interface untuk mendefinisikan kerangka umum tanpa implementasi detail.
-- Contoh pada class:
-LayananNotifikasi.java
-→ Menyediakan metode tampilkanInfo, tampilkanError tanpa perlu tahu cara Alert JavaFX bekerja.
-PengendaliForum.java
-→ Method tambahPost, hapusPost, dll, menyederhanakan cara kerja forum ke tingkat yang mudah digunakan komponen UI.
-DashboardController.java dan HalamanLogin.java
-→ Hanya menyajikan logika visual tanpa detail model-data (abstraksi UI-logic).
+Contoh pada class:
+- LayananNotifikasi.java
+Menyediakan metode tampilkanInfo, tampilkanError tanpa perlu tahu cara Alert JavaFX bekerja.
+- PengendaliForum.java
+Method tambahPost, hapusPost, dll, menyederhanakan cara kerja forum ke tingkat yang mudah digunakan komponen UI.
+- DashboardController.java dan HalamanLogin.java
+Hanya menyajikan logika visual tanpa detail model-data (abstraksi UI-logic).
 
 ---
 ## ⚙️ Cara Menjalankan Aplikasi
@@ -116,7 +116,7 @@ DashboardController.java dan HalamanLogin.java
    ```
    Masuk ke direktori
    ```sh
-   cd SiPeka
+   cd SiPeka-Sistem-Pelaporan-Kebersihan
    ```
 3. Build dan jalankan dengan gradle
    Jalankan aplikasi dengan perintah berikut

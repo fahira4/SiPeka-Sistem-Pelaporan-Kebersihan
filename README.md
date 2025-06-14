@@ -98,9 +98,9 @@ Fungsi kompleks seperti penyimpanan data (PenyimpananData.java) dan layanan noti
    ./gradlew run
    ```
 ## Author
-1. Github: fahira4
-2. Github: rnratika
-3. Github: izzasyathra
+1. Github: [fahira4](https://github.com/fahira4)
+2. Github: [rnratika](https://github.com/rnratika)
+3. Github: [izzasyathra](https://github.com/izzasyathra)
 
 ## MIT License
 Copyright (c) 2025 Tim SiPeka

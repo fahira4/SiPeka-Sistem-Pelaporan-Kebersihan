@@ -1,0 +1,52 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    // Ganti ini dengan path lengkap class utama kamu
+    mainClass = 'test.Main'
+}
+
+javafx {
+    version = "21"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+run {
+    doFirst {
+        jvmArgs += [
+            "--module-path", "C:/Program Files/Java/javafx-21/lib",
+            "--add-modules", "javafx.controls,javafx.fxml"
+        ]
+    }
+}
+
+def javafxVersion = "21"
+
+dependencies {
+    implementation "org.openjfx:javafx-controls:$javafxVersion"
+    implementation "org.openjfx:javafx-fxml:$javafxVersion"
+    implementation 'org.xerial:sqlite-jdbc:3.44.1.0'
+}
+
+

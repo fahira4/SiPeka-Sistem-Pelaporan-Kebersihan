@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="test.controller.DashboardController"
+            prefWidth="400" prefHeight="700" style="-fx-background-color: #f0f4f8;">
+    
+    <VBox spacing="20" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20">
+        
+        <!-- Header -->
+        <VBox spacing="5">
+            <Label text="Laporan Berkala" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+            <Label text="Statistik laporan sampah" style="-fx-font-size: 14px; -fx-text-fill: gray;" />
+        </VBox>
+
+        <!-- Statistik Ringkas -->
+        <HBox spacing="10">
+            <VBox spacing="5" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 10; -fx-background-radius: 10;">
+                <Label text="Total Laporan" />
+                <Label fx:id="totalLaporanLabel" style="-fx-font-size: 20px;" />
+            </VBox>
+            <VBox spacing="5" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 10; -fx-background-radius: 10;">
+                <Label text="Laporan yang Terselesaikan" wrapText="true"/>
+                <Label fx:id="laporanSelesaiLabel" style="-fx-font-size: 20px;" />
+            </VBox>
+            <VBox spacing="5" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 10; -fx-background-radius: 10;">
+                <Label text="RT Aktif" />
+                <Label fx:id="rtAktifLabel" style="-fx-font-size: 20px;" />
+            </VBox>
+        </HBox>
+
+        <!-- Grafik -->
+        <BarChart fx:id="barChart" prefHeight="200">
+            <xAxis>
+                <CategoryAxis label="Bulan" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Jumlah" />
+            </yAxis>
+        </BarChart>
+
+        <!-- Daftar RT Aktif -->
+        <VBox spacing="5">
+            <Label text="Top RT Aktif" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+            <ListView fx:id="rtListView" prefHeight="100" />
+        </VBox>
+    </VBox>
+</AnchorPane>

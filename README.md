@@ -82,13 +82,13 @@ dan lain-lain (DashboardController, HalamanLogin, LayananNotifikasi, PengendaliF
 
 ### 2. Inheritance (Pewarisan)
 Konsep di mana sebuah class dapat mewarisi sifat dan perilaku (atribut dan method) dari class lain. Ini memungkinkan code reuse dan struktur hierarki antar class, contohnya: class Mobil extends Kendaraan.
-Contoh pada class:
+- Contoh pada class:
 FormLaporanSampah.java
 → *FormLaporanSampah extends VBox* ini adalah bentuk pewarisan dari class JavaFX VBox, sehingga FormLaporanSampah otomatis memiliki properti dan method layout milik VBox.
 
 ### 3. Polymorphism (Polimorfisme)
 Kemampuan objek untuk merespons secara berbeda terhadap method yang sama, tergantung jenis objeknya. Misalnya, method bergerak() dapat memiliki implementasi berbeda di class Mobil dan Motor.
-Contoh pada class:
+- Contoh pada class:
 LayananNotifikasi.java
 → Method overload atau pengiriman notifikasi melalui method yang sama (tampilkanInfo vs tampilkanError) menunjukkan polimorfisme melalui nama method yang sama dengan perilaku berbeda.
 FormLaporanSampah.java dan FormRegistrasi.java

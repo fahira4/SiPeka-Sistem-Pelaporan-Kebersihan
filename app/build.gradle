@@ -7,7 +7,12 @@ repositories {
     mavenCentral()
 }
 
+def javafxVersion = "21"
+
 dependencies {
+    implementation "org.openjfx:javafx-controls:$javafxVersion"
+    implementation "org.openjfx:javafx-fxml:$javafxVersion"
+    implementation 'org.xerial:sqlite-jdbc:3.44.1.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
@@ -19,12 +24,11 @@ java {
 }
 
 application {
-    // Ganti ini dengan path lengkap class utama kamu
     mainClass = 'test.Main'
 }
 
 javafx {
-    version = "21"
+    version = javafxVersion
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
@@ -40,13 +44,3 @@ run {
         ]
     }
 }
-
-def javafxVersion = "21"
-
-dependencies {
-    implementation "org.openjfx:javafx-controls:$javafxVersion"
-    implementation "org.openjfx:javafx-fxml:$javafxVersion"
-    implementation 'org.xerial:sqlite-jdbc:3.44.1.0'
-}
-
-
